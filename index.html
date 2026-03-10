@@ -692,12 +692,15 @@
     document.getElementById('textColorValue').textContent = textColor.value;
     document.getElementById('accentColorValue').textContent = accentColor.value;
     
+    // Правильные обработчики событий (было 'BRO' - теперь 'input')
     bgColor.addEventListener('input', () => {
       document.getElementById('bgColorValue').textContent = bgColor.value;
     });
+    
     textColor.addEventListener('input', () => {
       document.getElementById('textColorValue').textContent = textColor.value;
     });
+    
     accentColor.addEventListener('input', () => {
       document.getElementById('accentColorValue').textContent = accentColor.value;
     });
